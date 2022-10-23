@@ -1,0 +1,36 @@
+h2{
+    color: green;
+}
+.sponser{
+    color:aqua
+}
+.player{
+    color: red;
+}
+.maneger{
+    color : blue;
+}
+.club{
+    color:brown;
+}
+#sponser2{
+    color : yellowgreen;
+    font-size: larger;
+}
+#player2{
+font-size: x-large;
+color: aquamarine;
+
+}
+#maneger2{
+   font-size: xx-large; 
+}
+#club2{
+    color: black;
+    font-size: small;
+}
+div p{
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+}

@@ -1,0 +1,6 @@
+input {
+    background: red;
+}
+input[type=submit]{
+    background: rgb(0, 217, 255);
+}
