@@ -4,3 +4,48 @@ input {
 input[type=submit]{
     background: rgb(0, 217, 255);
 }
+input[type=email]{
+    background: rgb(94, 92, 238);
+}
+input [ type = text]{
+    background: yellowgreen;
+}
+.x{
+    width: 400px;
+    height: 100px;
+    background: orange;
+    border-width: 10px;
+    border-color: red;
+    border-style:double;
+
+}
+.border{
+    width: 400px;
+    height: 200px;
+    background: yellow;
+    border: 10px green solid;
+}
+h1{
+    color : brown;
+    font-size: 60px;
+    font-family: fantasy;
+    font-weight: 100;
+}
+p{
+    color:aqua;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    line-height: 100px;
+    letter-spacing: 3 0px;
+}
+
+.work{
+    color: blue;
+    text-align: right;
+    direction: rtl;
+    font-size: larger;
+}
+.work2{
+    color: red;
+}
