@@ -44,8 +44,122 @@ p{
     color: blue;
     text-align: right;
     direction: rtl;
-    font-size: larger;
+    font-size: xx-large;
 }
 .work2{
     color: red;
+    direction: rtl;
 }
+.image{
+    height: 200px;
+    width: 200px;
+    border: 5px black solid;
+    background-image: url(../html_work/image1.png);
+}
+.image1{
+    color:red;
+    height: 400px;
+    width: 400px;
+    border: 5px black solid;
+    background-image: url(../../Screenshot\ 2022-10-20\ 112754.png);
+}
+.image2{
+    color:red;
+    height: 400px;
+    width: 400px;
+    border: 5px black solid;
+    background-size: cover;
+    background-image: url(../../Screenshot\ 2022-10-20\ 112754.png);
+}
+.image3{
+    color:red;
+    height: 400px;
+    width: 400px;
+    border: 5px black solid;
+    background-size: contain;
+   
+    background-image: url(../../Screenshot\ 2022-10-20\ 112754.png); 
+    
+}
+.image4{
+    color:red;
+    height: 400px;
+    width: 400px;
+    border: 5px black solid;
+    background-size: 400px 400px;
+   
+    background-image: url(../../Screenshot\ 2022-10-20\ 112754.png); 
+    
+}
+.image5{
+    color:red;
+    height: 400px;
+    width: 400px;
+    border: 5px black solid;
+    background-size: 50px 50px;
+    background-position: center;
+    background-position: 30px 30px;
+    background-position: 30% 50%;
+    
+    background-repeat: no-repeat;
+
+    background-image: url(../../Screenshot\ 2022-10-20\ 112754.png); 
+    
+}
+.image6{
+    color:red;
+    height: 1000px;
+    width: 400px;
+    border: 5px black solid;
+    background-size: 50px 50px;
+    
+    background-repeat: no-repeat;
+    background-image: url(../../Screenshot\ 2022-10-20\ 112754.png); 
+    background-attachment:fixed ;
+}
+
+
+.link1{
+    text-decoration: none;
+    color: red;
+    cursor: alias;
+}
+.link1:hover{
+    color : yellowgreen;
+    font-size: 20px;
+}
+.block{
+    background-color: red;
+    width: 200px;
+    margin: 10px;
+    height: 50px;
+    padding: 20px;
+}
+.line{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+.line1{
+    display: block;
+    background-color: red;
+    width: 200px;
+    margin: 10px;
+    height: 50px;
+    padding: 20PX;
+}
+.block1{
+    display:inline;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+.mix{
+    display: inline-block;
+    background-color: red;
+    width: 200px;
+    margin: 10px;
+    height: 50px;
+    padding: 20px;
+}
+
