@@ -213,4 +213,87 @@ console.log(12222<22 || 7=='7');
 
 //**************************************************************************************** */
 let age = 14;
-age>10?console.log('you can play '):console.log('you can not play ')
+age>10?console.log('you can play '):console.log('you can not play ');
+
+// function ******************************************************************************
+
+
+// decleration function
+function hello(){
+    console.log('hello world');
+}
+
+// exprition function
+let hello1 = function(){
+    console.log('hello world');
+}
+hello1();// must call it 
+(function (){
+    console.log('function call it self');
+})();
+
+function calc (...numb){
+    console.log(numb);
+
+}// how to make array parameter 
+
+calc(1,4,6,7,9,'h',7);
+
+function calcu(...numb){
+    let result = 0;
+    for(let i =0 ; i<numb.length;i++)
+    {
+        result += numb[i];
+        
+    }
+    console.log(result);
+
+}
+calcu(5,3,6,8,8,9,2,4);
+
+let xac= ()=> 3;
+let xacq= _=> 2;
+let xach= num=> num*2;
+let xact= (num,x)=> num*x;
+console.log(xac());
+console.log(xacq());
+console.log(xach(3));
+console.log(xact(4,6));
+
+// object 
+let car ={
+    brand : 'bmw',
+    price : 500000,
+    color: ['white', 'red', 'black'],
+    model : 2020,
+    // nested object
+    number_car:{
+        first:1242564,
+        second:232535,
+    },
+    one_color : function(){
+        return this.color[0];
+    },
+    old:function(){
+        return 2022-car.model;
+    },
+};
+console.log(car.brand);
+console.log(car['price']);
+console.log(car);
+console.log(car.one_color());
+console.log(car.number_car.first);
+console.log(car['number_car']['first']);
+
+let user = {};
+user.name='ahmad'; // create proparity
+user['age']=24;
+console.log(user.name);
+console.log(user.age);
+user.hello=function(){
+    return 'hello';
+}
+console.log(user.hello());
+ 
+let users = new String();
+console.log(users);
