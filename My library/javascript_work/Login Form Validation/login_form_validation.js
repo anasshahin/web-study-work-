@@ -9,8 +9,11 @@ let pass_error = document.getElementById('pass_error');
 let email_error = document.getElementById('email_error');
 input.addEventListener('textInput',email_Verify);
 input1.addEventListener('textInput',pass_Verify);
+let get = document.getElementById("1");
 /*********************************************************************** */
-
+input1.value = getCookie("input1");
+input.value = getCookie("input");
+get.value = getCookie("input1");
 document.body.style.background = "url('back_img.png') no-repeat";
 document.body.style.backgroundSize = "cover";
 document.body.style.alignItems = "center";
@@ -133,3 +136,49 @@ function pass_Verify(){
         pass_error.style.display="none";
         return true;
     }}
+
+/************************************************************** ********/
+
+
+/*button.addEventListener ('click',function (){
+    setCookie("input1",input1.value);
+setCookie("input",input.value);
+    //window.alert("hello world");
+    
+});*/
+
+function setCookie(cname,cvalue,exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
+  function checkCookie() {
+    let user = getCookie("username");
+    if (user != "") {
+      alert("Welcome again " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+         setCookie("username", user, 30);
+       }
+    }
+  }
+

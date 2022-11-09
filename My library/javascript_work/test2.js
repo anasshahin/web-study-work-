@@ -260,7 +260,7 @@ console.log(xacq());
 console.log(xach(3));
 console.log(xact(4,6));
 
-// object 
+// ****************** object *********************************************************
 let car ={
     brand : 'bmw',
     price : 500000,
@@ -277,6 +277,9 @@ let car ={
     old:function(){
         return 2022-car.model;
     },
+   speed(){
+    
+   }  
 };
 console.log(car.brand);
 console.log(car['price']);
@@ -359,3 +362,4 @@ let a3 = {
 let a4 = Object.assign(a1,a2,a3,{num4:4});
 console.log(a4);
 console.log(a1); // ليش خزن القيم فيها برضه
+ 
