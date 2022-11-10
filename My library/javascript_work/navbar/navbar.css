@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+.container{
+    width:120px;
+    height: 100vh;
+    background: cornflowerblue;
+    color: black;
+}
+.container p{
+    padding :5px;
+}
+.container p:hover{
+    background: wheat;
+}
+button{
+    background: cornflowerblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+#close {
+    position: absolute;
+    left: 125px;
+}
+.hide{
+    display : none;
+}
